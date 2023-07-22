@@ -11,7 +11,6 @@
     </Heading>
 
     <Card class="min-h-screen p-3">
-        {{  users || 'NO DATA' }}
         <FullCalendar ref="calendar" :options="calendarOptions" />
     </Card>
   </div>
