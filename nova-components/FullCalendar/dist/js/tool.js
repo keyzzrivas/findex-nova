@@ -53,7 +53,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               case 4:
                 _yield$Nova$request$g = _context.sent;
                 data = _yield$Nova$request$g.data;
-                _events2 = (data.data || []).map(function (user) {
+                _events2 = (data || []).map(function (user) {
                   return {
                     id: user.id,
                     title: user.name,

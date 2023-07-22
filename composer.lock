@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abf36701bb82072556dd3af90e6f90cb",
+    "content-hash": "2826309e34b5633305ff310e34214dde",
     "packages": [
         {
             "name": "brick/math",
@@ -861,6 +861,42 @@
                 "MIT"
             ],
             "description": "A Laravel Nova tool.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "findex/onboarding",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/Onboarding",
+                "reference": "744dce43c78462ee1a4b1ac4fb6cedfe668adbc0"
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Findex\\Onboarding\\CardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Findex\\Onboarding\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova card.",
             "keywords": [
                 "laravel",
                 "nova"
@@ -8990,7 +9026,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "findex/full-calendar": 20
+        "findex/full-calendar": 20,
+        "findex/onboarding": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

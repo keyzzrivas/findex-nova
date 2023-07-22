@@ -62,6 +62,10 @@ class User extends Resource
                 ->onlyOnForms()
                 ->creationRules('required', Rules\Password::defaults())
                 ->updateRules('nullable', Rules\Password::defaults()),
+
+            // \Findex\Onboarding\Onboarding::make(),
+            // \Findex\Onboarding\Onboarding::make('created_at')->showOnIndex(),
+
         ];
     }
 
@@ -73,7 +77,9 @@ class User extends Resource
      */
     public function cards(NovaRequest $request)
     {
-        return [];
+        return [
+            new \Findex\Onboarding\Onboarding,
+        ];
     }
 
     /**

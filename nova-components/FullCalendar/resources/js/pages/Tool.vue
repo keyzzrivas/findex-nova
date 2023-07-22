@@ -40,7 +40,7 @@ const calendarOptions = {
         try {
             const params = `start=${info.start.toISOString()}&end=${info.end.toISOString()}`
             const { data } = await Nova.request().get(`/nova-vendor/full-calendar/users?${params}`)
-            const events = (data.data || []).map((user) => ({
+            const events = (data || []).map((user) => ({
                 id: user.id,
                 title: user.name,
                 start: user.created_at,

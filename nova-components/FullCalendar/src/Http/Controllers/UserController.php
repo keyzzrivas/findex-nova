@@ -21,8 +21,8 @@ class UserController extends Controller
         $start = Carbon::parse($request->start);
         $end = Carbon::parse($request->end);
 
-        return response()->json([
-            'data' => User::whereBetween('created_at', [$start, $end])->get()
-        ]);
+        return response()->json(
+            User::whereBetween('created_at', [$start, $end])->get()
+        );
     }
 }

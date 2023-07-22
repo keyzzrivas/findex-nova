@@ -5,7 +5,9 @@
         "dev": "vite",
         "build": "vite build",
         "build-full-calendar": "cd nova-components/FullCalendar && npm run dev",
-        "build-full-calendar-prod": "cd nova-components/FullCalendar && npm run prod"
+        "build-full-calendar-prod": "cd nova-components/FullCalendar && npm run prod",
+        "build-onboarding": "cd nova-components/Onboarding && npm run dev",
+        "build-onboarding-prod": "cd nova-components/Onboarding && npm run prod"
     },
     "devDependencies": {
         "axios": "^1.1.2",

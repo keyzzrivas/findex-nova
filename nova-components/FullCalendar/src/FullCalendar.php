@@ -16,8 +16,8 @@ class FullCalendar extends Tool
      */
     public function boot()
     {
-        Nova::script('full-calendar', __DIR__.'/../dist/js/tool.js');
-        Nova::style('full-calendar', __DIR__.'/../dist/css/tool.css');
+        Nova::script('full-calendar', __DIR__ . '/../dist/js/tool.js');
+        Nova::style('full-calendar', __DIR__ . '/../dist/css/tool.css');
     }
 
     /**
@@ -30,6 +30,6 @@ class FullCalendar extends Tool
     {
         return MenuSection::make('Full Calendar')
             ->path('/full-calendar')
-            ->icon('server');
+            ->icon('calendar');
     }
 }
